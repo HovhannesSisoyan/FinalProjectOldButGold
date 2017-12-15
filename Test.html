@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="quiz.css" rel="stylesheet">
+	</head>
+	<body>
+        <div style="width: 300px;margin: 0 auto;">
+            <p style="text-align: center"><span id="minutes"></span> : <span id="seconds"></span></p>
+        </div>
+
+		<div id="quizContainer1" class="container">
+			<div class="title">GRE Test</div>
+			<div id="question1" class="question">
+				<img class='question'/>
+			</div>
+			<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+			<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+			<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+			<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+			<button id="nextButton" class="next-btn" onclick="counter()">Next Question</button>
+		</div>
+		
+		<div id="quizContainer2" class="container">
+			<div class="title">GRE Test</div>
+			<div id="question2" class="question"></div>
+			<label class="option"><input type="checkbox" name="option" value="5" /> <span id="opt5"></span></label>
+			<label class="option"><input type="checkbox" name="option" value="6" /> <span id="opt6"></span></label>
+			<label class="option"><input type="checkbox" name="option" value="7" /> <span id="opt7"></span></label>
+			<label class="option"><input type="checkbox" name="option" value="8" /> <span id="opt8"></span></label>
+			<label class="option"><input type="checkbox" name="option" value="9" /> <span id="opt9"></span></label>
+			<button id="nextButton" class="next-btn" onclick="counter();">Next Question</button>
+		</div>
+		
+		<div id="quizContainer3" class="container">
+			<div class="title">GRE Test</div>
+			<div id="question3" class="question"></div>
+			<input type="number" id="opt10" value="">
+			<!--<label class="option"><input type="number" name="option" value="" /> <span id="opt10"></span></label> -->
+			<button id="nextButton" class="next-btn" onclick="counter();">Next Question</button>
+		</div>
+		
+		<div id="result" class="container result" style="display:none;">
+		</div>
+		<script src="quiz-script.js"></script>
+	</body>
+</html>
